@@ -12,7 +12,6 @@ const Cart = () => {
     const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove } = useStateContext();
 
     const handleCheckout = async () => {
-        console.log(`INSIDE HANDLECHECKOUT`)
         const stripe = await getStripe();
 
         // comes from /pages/api/stripe
